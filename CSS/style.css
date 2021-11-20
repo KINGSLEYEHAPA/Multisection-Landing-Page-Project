@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: red;
+}
+
+header div img {
+  width: 4%;
+}
+
+#hero {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8rem;
+}
+#hero aside:last-child img {
+  width: 80%;
+  border-radius: 1rem;
+}
+
+#hero aside:first-child {
+  width: 50%;
+  margin: 0 5rem;
+}
+#hero aside:first-child h1 {
+  color: rgb(2, 2, 30);
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+#hero aside:first-child p {
+  color: white;
+  font-size: 1.2rem;
+}
+#hero aside:first-child p a {
+  color: rgb(2, 2, 30, 0.55);
+  text-decoration: none;
+}
