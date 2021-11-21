@@ -7,9 +7,26 @@
 body {
   background: red;
 }
+header {
+  height: 6rem;
+  height: 100%;
+  background-color: rgb(2, 2, 30);
+}
 
 header div img {
   width: 4%;
+  margin: 1rem 0;
+  margin-left: 1rem;
+}
+header div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header div span {
+  color: white;
+  margin-left: 1.2rem;
+  font-size: 1.5rem;
 }
 
 #hero {
@@ -38,4 +55,16 @@ header div img {
 #hero aside:first-child p a {
   color: rgb(2, 2, 30, 0.55);
   text-decoration: none;
+}
+#events {
+  display: flex;
+  margin-top: 10rem;
+  justify-content: space-around;
+  align-items: center;
+}
+#events div:nth-child(3) img {
+  width: 100%;
+}
+#events div:nth-child(2) {
+  width: 30%;
 }
