@@ -5,7 +5,7 @@
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background: red;
+  background: rgba(0, 0, 0, 0.75);
 }
 header {
   height: 6rem;
@@ -36,7 +36,8 @@ header div span {
 }
 #hero aside:last-child img {
   width: 80%;
-  border-radius: 1rem;
+  height: 100%;
+  border: 2px solid rgb(2, 2, 30);
 }
 
 #hero aside:first-child {
@@ -52,19 +53,37 @@ header div span {
   color: white;
   font-size: 1.2rem;
 }
-#hero aside:first-child p a {
-  color: rgb(2, 2, 30, 0.55);
-  text-decoration: none;
-}
+
 #events {
   display: flex;
-  margin-top: 10rem;
-  justify-content: space-around;
+  margin: 10rem 4rem;
+  justify-content: space-between;
   align-items: center;
 }
 #events div:nth-child(3) img {
-  width: 100%;
+  width: 75%;
+  border: 2px solid rgb(2, 2, 30);
 }
 #events div:nth-child(2) {
-  width: 30%;
+  width: 60%;
+  margin: 0 7rem;
+}
+.fas {
+  font-size: 5rem;
+  width: 5%;
+  color: rgb(2, 2, 30);
+}
+.fas:hover {
+  color: rgb(2, 2, 30, 0.75);
+}
+#events div:nth-child(2) h2 {
+  color: rgb(2, 2, 30);
+}
+#events div:nth-child(2) p {
+  color: white;
+  margin-top: 2rem;
+}
+#events div:nth-child(2) p a {
+  color: rgb(2, 2, 30, 0.6);
+  text-decoration: none;
 }
