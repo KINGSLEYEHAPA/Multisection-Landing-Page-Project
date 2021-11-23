@@ -54,6 +54,7 @@ img:hover {
   color: rgb(2, 2, 30);
   font-size: 3rem;
   margin-bottom: 4rem;
+  font-weight: 900;
 }
 #hero aside:first-child p {
   color: white;
@@ -64,11 +65,13 @@ img:hover {
   margin-top: 10rem;
 }
 
-#events-tab h2 {
+#events-tab h2,
+#match-report h2 {
   margin-top: 1rem;
   text-align: center;
   position: relative;
   font-size: 2rem;
+  font-weight: 600;
 }
 #events-tab h2:before {
   content: "";
@@ -99,8 +102,9 @@ img:hover {
 }
 #events div:nth-child(3) img {
   width: 30rem;
+  height: 18rem;
   border: 2px solid rgb(2, 2, 30);
-  margin-right: 4rem;
+  margin-right: 6rem;
 
   /* margin-top: 10rem; */
 }
@@ -128,4 +132,57 @@ img:hover {
 #events div:nth-child(2) p a {
   color: rgb(2, 2, 30, 0.6);
   text-decoration: none;
+}
+#match-report h2:before {
+  content: "";
+  display: block;
+  width: 15rem;
+  height: 5px;
+  background: rgb(2, 2, 30);
+  left: 12rem;
+  top: 50%;
+  position: absolute;
+}
+#match-report h2:after {
+  content: "";
+  display: block;
+  width: 15rem;
+  height: 5px;
+  background: rgb(2, 2, 30);
+  right: 12rem;
+  top: 50%;
+  position: absolute;
+}
+
+#match-report {
+  display: flex;
+  flex-direction: column;
+}
+
+.match-cards {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.match-card {
+  width: 18rem;
+  height: 25rem;
+}
+.match-card img {
+  width: 15rem;
+  border-radius: 0.5rem;
+}
+.match-card h5 a {
+  color: rgb(2, 2, 30);
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  text-decoration: none;
+}
+.match-card p {
+  color: white;
+  font-size: 0.8rem;
 }

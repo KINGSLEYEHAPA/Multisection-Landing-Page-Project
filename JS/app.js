@@ -1,4 +1,4 @@
-const clubNews = [ {title:"Arsenal goes to Abuja",
+const clubNews = [ {title:"Arsenal wins the Champions league in Rome",
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui alias atque veritatis in voluptatum et!",
                      img: "Assets/champions.webp" },
                      {title:"Arsenal goes to Kano",
@@ -6,7 +6,7 @@ const clubNews = [ {title:"Arsenal goes to Abuja",
                       img: "Assets/fans.png" },
                       {title:"Arsenal goes to Calabar",
                       description: "Lorem Qui alias atque veritatis in voluptatum et! Lorem r adipisicing elit. Qui alias atque veritatis in volupt Lorem r adipisicing elit. Qui alias atque veritatis in volupt",
-                       img: "Assets/fans.png" }];
+                       img: "Assets/fans.jpg" }];
 
 
                     //    Get Elements
