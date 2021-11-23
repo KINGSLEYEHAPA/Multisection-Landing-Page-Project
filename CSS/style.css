@@ -5,16 +5,19 @@
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.45);
 }
 header {
+  display: flex;
+  justify-content: space-between;
   height: 6rem;
-  height: 100%;
   background-color: rgb(2, 2, 30);
+  position: sticky;
+  top: 0;
 }
 
 header div img {
-  width: 4%;
+  width: 6%;
   margin: 1rem 0;
   margin-left: 1rem;
 }
@@ -39,6 +42,9 @@ header div span {
   height: 100%;
   border: 2px solid rgb(2, 2, 30);
 }
+img:hover {
+  opacity: 0.7;
+}
 
 #hero aside:first-child {
   width: 50%;
@@ -52,17 +58,51 @@ header div span {
 #hero aside:first-child p {
   color: white;
   font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+#events-tab {
+  margin-top: 10rem;
+}
+
+#events-tab h2 {
+  margin-top: 1rem;
+  text-align: center;
+  position: relative;
+  font-size: 2rem;
+}
+#events-tab h2:before {
+  content: "";
+  display: block;
+  width: 15rem;
+  height: 5px;
+  background: rgb(2, 2, 30);
+  left: 19rem;
+  top: 50%;
+  position: absolute;
+}
+#events-tab h2:after {
+  content: "";
+  display: block;
+  width: 15rem;
+  height: 5px;
+  background: rgb(2, 2, 30);
+  right: 19rem;
+  top: 50%;
+  position: absolute;
 }
 
 #events {
   display: flex;
-  margin: 10rem 4rem;
+  margin: 6rem 4rem;
   justify-content: space-between;
   align-items: center;
 }
 #events div:nth-child(3) img {
-  width: 75%;
+  width: 30rem;
   border: 2px solid rgb(2, 2, 30);
+  margin-right: 4rem;
+
+  /* margin-top: 10rem; */
 }
 #events div:nth-child(2) {
   width: 60%;
@@ -76,12 +116,14 @@ header div span {
 .fas:hover {
   color: rgb(2, 2, 30, 0.75);
 }
-#events div:nth-child(2) h2 {
+#events div:nth-child(2) h3 {
   color: rgb(2, 2, 30);
+  font-size: 1.5rem;
 }
 #events div:nth-child(2) p {
   color: white;
   margin-top: 2rem;
+  line-height: 1.5rem;
 }
 #events div:nth-child(2) p a {
   color: rgb(2, 2, 30, 0.6);
