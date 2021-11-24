@@ -7,6 +7,7 @@
 body {
   background: rgba(0, 0, 0, 0.45);
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -276,3 +277,316 @@ footer .about p {
 .social-links a {
   text-decoration: none;
 }
+/* Media query laptop */
+
+@media screen and (min-width: 1100px) {
+  #hero aside:last-child img {
+    width: 80%;
+    height: 100%;
+    border: 2px solid rgb(2, 2, 30);
+  }
+
+  #hero aside:first-child {
+    width: 100%;
+    margin: 0 2rem;
+  }
+
+  #events {
+    display: flex;
+    margin: 6rem 4rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #events div:nth-child(3) img {
+    width: 24rem;
+    height: 15rem;
+  }
+  #events div:nth-child(2) {
+    width: 80%;
+    margin: 0 3rem;
+  }
+  .fas {
+    font-size: 4rem;
+  }
+
+  #events div:nth-child(2) h3 {
+    font-size: 1.8rem;
+  }
+
+  #events div:nth-child(2) p a {
+    color: rgb(2, 2, 30, 0.6);
+    text-decoration: none;
+  }
+
+  #events-tab h2:before {
+    left: 6rem;
+  }
+  #events-tab h2:after {
+    right: 6rem;
+  }
+  #match-report h2:before {
+    left: 5rem;
+  }
+  #match-report h2:after {
+    right: 5rem;
+  }
+  #partners h2:before {
+    left: 7rem;
+  }
+  #partners h2:after {
+    right: 7rem;
+  }
+  footer .socials {
+    margin-bottom: -0.4rem;
+  }
+}
+
+/* Media Query Tablet Size 1 */
+@media screen and (min-width: 900px) and (max-width: 1099px) {
+  #hero {
+    width: 90%;
+  }
+  #hero aside:last-child img {
+    width: 20rem;
+    height: 15rem;
+    border: 2px solid rgb(2, 2, 30);
+    margin-left: 3rem;
+  }
+  #hero aside:last-child {
+    margin-left: 2rem;
+  }
+
+  #hero aside:first-child {
+    width: 60%;
+    margin: 0 2rem;
+  }
+
+  #events {
+    display: flex;
+    margin: 6rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #events div:nth-child(3) img {
+    width: 18rem;
+    height: 10rem;
+    margin-left: 1rem;
+  }
+  #events div:nth-child(2) {
+    width: 80%;
+    margin: 0 1rem;
+  }
+  .fas {
+    font-size: 4rem;
+  }
+  .fas:first-child {
+    margin-right: 1rem;
+  }
+
+  #events div:nth-child(2) h3 {
+    font-size: 1.8rem;
+  }
+
+  #events div:nth-child(2) p a {
+    color: rgb(2, 2, 30, 0.6);
+    text-decoration: none;
+  }
+
+  #events-tab h2:before {
+    left: 2rem;
+  }
+  #events-tab h2:after {
+    right: 2rem;
+  }
+
+  .match-card {
+    width: 18rem;
+    height: 22rem;
+  }
+  .match-card img {
+    width: 10rem;
+  }
+
+  .match-card h5 a {
+    font-size: 0.8rem;
+  }
+  .match-card p {
+    font-size: 0.6rem;
+  }
+  #match-report h2:before {
+    left: 3rem;
+    width: 10rem;
+  }
+  #match-report h2:after {
+    right: 3rem;
+    width: 10rem;
+  }
+  #partners h2:before {
+    left: 2rem;
+  }
+  #partners h2:after {
+    right: 2rem;
+  }
+
+  footer .about {
+    width: 40%;
+    margin: 0 7rem;
+  }
+  footer .socials {
+    width: 50%;
+    margin: 0 6rem;
+    margin-bottom: 0.2rem;
+  }
+  footer .about h3,
+  footer .socials h3 {
+    color: white;
+    font-size: 1.2rem;
+    border-bottom: 2px solid white;
+    margin-bottom: 2rem;
+    padding-bottom: 0.8rem;
+  }
+  footer .about p {
+    color: white;
+    font-size: 0.8rem;
+  }
+  .fab {
+    color: white;
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.8rem;
+  }
+  .social-links a {
+    text-decoration: none;
+  }
+}
+
+/* Media Query Tablet Size 2 */
+@media screen and (min-width: 500px) and (max-width: 899px) {
+  #hero {
+    width: 90%;
+  }
+  #hero aside:last-child img {
+    width: 16rem;
+    height: 12rem;
+    border: 2px solid rgb(2, 2, 30);
+  }
+  #hero aside:last-child {
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+
+  #hero aside:first-child {
+    width: 75%;
+    margin: 0 2rem;
+  }
+  #hero aside:first-child p {
+    font-size: 1rem;
+  }
+
+  #events {
+    margin: 6rem 1rem;
+  }
+  #events div:nth-child(3) img {
+    width: 12rem;
+    height: 8rem;
+    margin-left: 1rem;
+  }
+  #events div:nth-child(2) {
+    width: 80%;
+    margin: 0 1rem;
+  }
+  .fas {
+    font-size: 3rem;
+  }
+  .fas:first-child {
+    margin-right: 1rem;
+  }
+
+  #events div:nth-child(2) h3 {
+    font-size: 1.5rem;
+  }
+
+  #events div:nth-child(2) p a {
+    color: rgb(2, 2, 30, 0.6);
+    text-decoration: none;
+  }
+
+  #events-tab h2:before {
+    left: 5rem;
+    width: 7rem;
+  }
+  #events-tab h2:after {
+    right: 5rem;
+    width: 7rem;
+  }
+
+  .match-card {
+    width: 18rem;
+    height: 22rem;
+  }
+  .match-card img {
+    width: 10rem;
+  }
+
+  .match-card h5 a {
+    font-size: 0.8rem;
+  }
+  .match-card p {
+    font-size: 0.6rem;
+  }
+  #match-report h2:before {
+    left: 2rem;
+    width: 6rem;
+  }
+  #match-report h2:after {
+    right: 2rem;
+    width: 6rem;
+  }
+  #partners h2:before {
+    left: 2rem;
+    width: 8rem;
+  }
+  #partners h2:after {
+    right: 2rem;
+    width: 8rem;
+  }
+  .sponsors a img {
+    width: 6rem;
+    height: 3rem;
+    border-bottom-right-radius: 0.6rem;
+    border-top-left-radius: 0.6rem;
+  }
+
+  footer .about {
+    width: 40%;
+    margin: 0 7rem;
+  }
+  footer .socials {
+    width: 50%;
+    margin: 0 6rem;
+    margin-top: 3rem;
+  }
+  footer .about h3,
+  footer .socials h3 {
+    color: white;
+    font-size: 1rem;
+    border-bottom: 2px solid white;
+    margin-bottom: 2rem;
+    padding-bottom: 0.8rem;
+  }
+  footer .about p {
+    color: white;
+    font-size: 0.8rem;
+  }
+  .fab {
+    color: white;
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+  .social-links a {
+    text-decoration: none;
+  }
+}
+
+/* Media Query Mobile */
