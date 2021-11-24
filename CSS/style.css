@@ -32,6 +32,25 @@ header div span {
   margin-left: 1.2rem;
   font-size: 1.5rem;
 }
+#nav-links ul {
+  list-style-type: none;
+  display: flex;
+  margin-right: 6rem;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  padding: 0 0rem 1rem 0rem;
+  font-size: 1.2rem;
+  margin: 0 2rem;
+}
+.nav-item:hover {
+  border-bottom: 3px solid red;
+}
+.visited {
+  color: orange;
+}
 
 #hero {
   display: flex;
@@ -107,7 +126,7 @@ header div span {
   /* margin-top: 10rem; */
 }
 #events div:nth-child(2) {
-  width: 60%;
+  width: 30%;
   margin: 0 7rem;
 }
 .fas {
@@ -319,10 +338,10 @@ footer .about p {
   }
 
   #events-tab h2:before {
-    left: 6rem;
+    left: 8rem;
   }
   #events-tab h2:after {
-    right: 6rem;
+    right: 8rem;
   }
   #match-report h2:before {
     left: 5rem;
