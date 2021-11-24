@@ -28,20 +28,31 @@ partnersLink.textContent = "Partners";
 aboutLink.textContent = "About";
 
 // Assign Attributes
-eventTabLink.setAttribute("href", "#");
-eventTabLink.setAttribute("data-link", "event-tab");
+eventTabLink.setAttribute("data-link", "events-tab");
 eventTabLink.setAttribute("class", "nav-item");
-matchReportLink.setAttribute("href", "#");
 matchReportLink.setAttribute("data-link", "match-report");
 matchReportLink.setAttribute("class", "nav-item");
-partnersLink.setAttribute("href", "#");
 partnersLink.setAttribute("data-link", "partners");
 partnersLink.setAttribute("class", "nav-item");
-aboutLink.setAttribute("href", "#");
-aboutLink.setAttribute("data-link", "about");
+aboutLink.setAttribute("data-link", "footer");
 aboutLink.setAttribute("class", "nav-item");
 
 // Scroll into view section
+const links = document.querySelectorAll(".nav-item");
+
+links.forEach((item) => {
+  item.addEventListener("click", () => {
+    // Remove visted state from each item of link
+    for (let i = 0; i < links.length; i++) {
+      if (links[i].classList.contains("visited")) {
+        links[i].classList.remove("visited");
+      }
+    }
+    const el = document.getElementById(item.getAttribute("data-link"));
+    el.scrollIntoView({ behavior: "smooth", block: "center" });
+    item.classList.add("visited");
+  });
+});
 
 // Event and news section
 const clubNews = [
