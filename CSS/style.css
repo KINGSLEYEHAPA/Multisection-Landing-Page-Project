@@ -295,6 +295,9 @@ footer .about p {
   margin: 1rem;
   font-size: 1.8rem;
 }
+.fab:hover {
+  color: goldenrod;
+}
 .social-links a {
   text-decoration: none;
 }
