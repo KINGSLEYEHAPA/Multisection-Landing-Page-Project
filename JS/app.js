@@ -21,13 +21,13 @@ matchReport.appendChild(matchReportLink);
 partners.appendChild(partnersLink);
 about.appendChild(aboutLink);
 
-// Assignment Content
+// Assignment of Content
 eventTabLink.textContent = "Event";
 matchReportLink.textContent = "Match Report";
 partnersLink.textContent = "Partners";
 aboutLink.textContent = "About";
 
-// Assign Attributes
+// Assigning Attributes
 eventTabLink.setAttribute("data-link", "events-tab");
 eventTabLink.setAttribute("class", "nav-item");
 matchReportLink.setAttribute("data-link", "match-report");
@@ -49,6 +49,7 @@ links.forEach((item) => {
       }
     }
     const el = document.getElementById(item.getAttribute("data-link"));
+
     el.scrollIntoView({ behavior: "smooth", block: "center" });
     item.classList.add("visited");
   });
@@ -137,3 +138,27 @@ function changeContent(currentItem) {
   eventDescription.innerHTML = item.description;
   eventImage.src = item.img;
 }
+
+// Hamburger Menu
+const navLinkBlock = document.querySelector("#nav-links");
+const toggleBtn = document.querySelector(".hamburger");
+const closeBtn = document.querySelector(".close-btn");
+
+toggleBtn.addEventListener("click", () => {
+  navLinkBlock.classList.toggle("show-menu");
+  if (navLinkBlock.classList.contains("show-menu")) {
+    toggleBtn.style.display = "none";
+    closeBtn.style.display = "block";
+  } else {
+    toggleBtn.style.display = "block";
+    closeBtn.style.display = "none";
+  }
+});
+
+// close button
+
+closeBtn.addEventListener("click", () => {
+  navLinkBlock.classList.toggle("show-menu");
+  closeBtn.style.display = "none";
+  toggleBtn.style.display = "block";
+});
