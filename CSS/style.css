@@ -41,6 +41,7 @@ header div span a {
 .close-btn {
   display: none;
 }
+
 .close-btn .fa-times {
   font-size: 2rem;
   margin-top: 2rem;
@@ -351,6 +352,9 @@ footer .about p {
   .show-menu {
     transform: translate(0);
   }
+  .hidden {
+    display: none;
+  }
   #nav-links ul {
     display: flex;
     flex-direction: column;
@@ -426,6 +430,40 @@ footer .about p {
 
 /* Media Query Tablet Size 1 */
 @media screen and (min-width: 900px) and (max-width: 1099px) {
+  header {
+    position: sticky;
+  }
+  .hamburger {
+    display: block;
+  }
+  #nav-links {
+    position: absolute;
+    top: 6rem;
+    width: 100%;
+    padding-top: -2rem;
+    background-color: rgb(2, 2, 30);
+    height: 20rem;
+    transition: 0.5s all;
+  }
+
+  .toggle-menu {
+    transform: translate(-100%);
+  }
+  .show-menu {
+    transform: translate(0);
+  }
+  #nav-links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #nav-links ul li {
+    padding: 1rem 0;
+  }
+  #nav-links ul li a {
+    padding-bottom: 0.5rem;
+  }
+
   #hero {
     width: 90%;
   }
@@ -545,13 +583,54 @@ footer .about p {
 
 /* Media Query Tablet Size 2 */
 @media screen and (min-width: 500px) and (max-width: 899px) {
+  header {
+    position: sticky;
+    width: 100%;
+  }
+  .hamburger {
+    display: block;
+  }
+  #nav-links {
+    position: absolute;
+    top: 6rem;
+    width: 100%;
+    padding-top: -2rem;
+    background-color: rgb(2, 2, 30);
+    height: 20rem;
+    transition: 0.5s all;
+  }
+  .nav-item {
+    font-size: 1rem;
+  }
+
+  .toggle-menu {
+    transform: translate(-100%);
+  }
+  .show-menu {
+    transform: translate(0);
+  }
+  #nav-links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #nav-links ul li {
+    padding: 1rem 0;
+  }
+  #nav-links ul li a {
+    padding-bottom: 0.5rem;
+  }
+
   #hero {
-    width: 90%;
+    width: 100%;
+    flex-direction: column;
+    margin: 6rem 2rem 4rem 6rem;
   }
   #hero aside:last-child img {
-    width: 16rem;
-    height: 12rem;
+    width: 18rem;
+    height: 13rem;
     border: 2px solid rgb(2, 2, 30);
+    margin-top: 4rem;
   }
   #hero aside:last-child {
     margin-left: 2rem;
@@ -567,18 +646,37 @@ footer .about p {
   }
 
   #events {
-    margin: 6rem 1rem;
+    margin: 6rem 2rem 2rem 2rem;
+    flex-direction: column;
   }
   #events div:nth-child(3) img {
     width: 12rem;
     height: 8rem;
     margin-left: 1rem;
+    margin-top: 3rem;
   }
   #events div:nth-child(2) {
     width: 80%;
     margin: 0 1rem;
+    order: 1;
   }
-  .fas {
+  #events div:nth-child(1) {
+    order: 3;
+    position: relative;
+    right: 4rem;
+    margin-top: 2rem;
+  }
+  #events div:nth-child(3) {
+    order: 2;
+  }
+  #events div:nth-child(4) {
+    order: 3;
+    position: relative;
+    bottom: 3rem;
+    right: 1rem;
+  }
+  .fa-angle-right,
+  .fa-angle-left {
     font-size: 3rem;
   }
   .fas:first-child {
@@ -593,29 +691,37 @@ footer .about p {
     color: rgb(2, 2, 30, 0.6);
     text-decoration: none;
   }
+  #events-tab h2,
+  #match-report h2,
+  #partners h2 {
+    font-size: 1rem;
+  }
 
   #events-tab h2:before {
-    left: 5rem;
+    left: 3rem;
     width: 7rem;
   }
   #events-tab h2:after {
-    right: 5rem;
+    right: 3rem;
     width: 7rem;
+  }
+  #match-report {
+    margin-left: 2rem;
   }
 
   .match-card {
-    width: 18rem;
-    height: 22rem;
+    width: 10rem;
+    height: 15rem;
   }
   .match-card img {
-    width: 10rem;
+    width: 7rem;
   }
 
   .match-card h5 a {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
   }
   .match-card p {
-    font-size: 0.6rem;
+    font-size: 0.4rem;
   }
   #match-report h2:before {
     left: 2rem;
@@ -634,20 +740,240 @@ footer .about p {
     width: 8rem;
   }
   .sponsors a img {
-    width: 6rem;
-    height: 3rem;
+    width: 4rem;
+    height: 2.5rem;
     border-bottom-right-radius: 0.6rem;
     border-top-left-radius: 0.6rem;
   }
 
   footer .about {
     width: 40%;
-    margin: 0 7rem;
+    margin: 0 5rem;
   }
   footer .socials {
     width: 50%;
-    margin: 0 6rem;
+    margin: 0 5rem;
+    margin-top: -4rem;
+  }
+  footer .about h3,
+  footer .socials h3 {
+    color: white;
+    font-size: 0.8rem;
+    border-bottom: 2px solid white;
+    margin-bottom: 2rem;
+    padding-bottom: 0.8rem;
+  }
+  footer .about p {
+    color: white;
+    font-size: 0.8rem;
+    width: 8rem;
+  }
+  .fab {
+    color: white;
+    text-align: center;
+    margin: 1rem;
+    font-size: 1rem;
+  }
+  .social-links {
+    display: flex;
+  }
+  .social-links a {
+    text-decoration: none;
+  }
+}
+
+/* Media Query Mobile */
+@media screen and (max-width: 499px) {
+  header {
+    position: sticky;
+    width: 100%;
+  }
+  header div span a {
+    font-size: 1rem;
+  }
+  .hamburger {
+    display: block;
+  }
+  #nav-links {
+    position: absolute;
+    top: 6rem;
+    width: 100%;
+    padding-top: -2rem;
+    background-color: rgb(2, 2, 30);
+    height: 20rem;
+    transition: 0.5s all;
+  }
+  .nav-item {
+    font-size: 0.8rem;
+  }
+
+  .toggle-menu {
+    transform: translate(-100%);
+  }
+  .show-menu {
+    transform: translate(0);
+  }
+  #nav-links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #nav-links ul li {
+    padding: 1rem 0;
+  }
+  #nav-links ul li a {
+    padding-bottom: 0.5rem;
+  }
+  #hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  #hero aside:last-child img {
+    width: 16rem;
+    height: 12rem;
+    border: 2px solid rgb(2, 2, 30);
+    margin-top: 2rem;
+  }
+  #hero aside:last-child {
+    margin-top: 2rem;
+  }
+
+  #hero aside:first-child {
+    width: 75%;
+    margin: 0 2rem;
+  }
+  #hero aside:first-child h1 {
+    font-size: 2rem;
+  }
+  #hero aside:first-child p {
+    font-size: 1rem;
+  }
+
+  #events-tab h2,
+  #match-report h2,
+  #partners h2 {
+    font-size: 0.8rem;
+  }
+  #events-tab h2:before {
+    left: 3rem;
+    width: 2rem;
+  }
+  #events-tab h2:after {
+    right: 3rem;
+    width: 2rem;
+  }
+  #match-report h2:before {
+    left: 1rem;
+    width: 2rem;
+  }
+  #match-report h2:after {
+    right: 1rem;
+    width: 2rem;
+  }
+  #partners h2:before {
+    left: 1rem;
+    width: 2rem;
+  }
+  #partners h2:after {
+    right: 1rem;
+    width: 2rem;
+  }
+  #events {
+    /* margin: 6rem 2rem 2rem 2rem; */
+    flex-direction: column;
+    align-items: center;
+  }
+  #events div:nth-child(3) img {
+    width: 12rem;
+    height: 8rem;
+    margin-left: 5rem;
     margin-top: 3rem;
+  }
+  #events div:nth-child(2) {
+    width: 80%;
+    margin: 0 1rem;
+    order: 1;
+  }
+  #events div:nth-child(1) {
+    order: 3;
+    position: relative;
+    right: 2rem;
+    margin-top: 2rem;
+  }
+  #events div:nth-child(3) {
+    order: 2;
+  }
+  #events div:nth-child(4) {
+    order: 3;
+    position: relative;
+    bottom: 3rem;
+  }
+  .fa-angle-right,
+  .fa-angle-left {
+    font-size: 3rem;
+  }
+  .fas:first-child {
+    margin-right: 1rem;
+  }
+
+  #events div:nth-child(2) h3 {
+    font-size: 1.5rem;
+  }
+
+  #events div:nth-child(2) p a {
+    color: rgb(2, 2, 30, 0.6);
+    text-decoration: none;
+  }
+  #match-report {
+    margin-left: 2rem;
+  }
+  .match-cards {
+    flex-direction: column;
+  }
+
+  .match-card {
+    width: 15rem;
+    height: 15rem;
+    margin: -1rem;
+  }
+  .match-card img {
+    width: 12rem;
+  }
+
+  .match-card h5 a {
+    font-size: 1rem;
+  }
+  .match-card p {
+    font-size: 0.5rem;
+  }
+  .sponsors {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .sponsors a img {
+    width: 4rem;
+    height: 2.5rem;
+    margin: 2rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+  }
+
+  footer {
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .about {
+    width: 80%;
+    margin: 0 6rem;
+  }
+  footer .socials {
+    width: 80%;
+    margin: 0 6rem;
+    margin-top: 5rem;
   }
   footer .about h3,
   footer .socials h3 {
@@ -665,11 +991,9 @@ footer .about p {
     color: white;
     text-align: center;
     margin: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
-  .social-links a {
-    text-decoration: none;
+  .social-links {
+    margin-left: 0;
   }
 }
-
-/* Media Query Mobile */

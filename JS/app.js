@@ -143,6 +143,10 @@ function changeContent(currentItem) {
 const navLinkBlock = document.querySelector("#nav-links");
 const toggleBtn = document.querySelector(".hamburger");
 const closeBtn = document.querySelector(".close-btn");
+// if (navLinkBlock.style.top !== "6rem") {
+//   closeBtn.style.display == "none";
+//   toggleBtn.style.display = "none";
+// }
 
 toggleBtn.addEventListener("click", () => {
   navLinkBlock.classList.toggle("show-menu");
