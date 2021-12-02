@@ -39,6 +39,7 @@ aboutLink.setAttribute("class", "nav-item");
 
 // Scroll into view section
 const links = document.querySelectorAll(".nav-item");
+const navLinkBlock = document.querySelector("#nav-links");
 
 links.forEach((item) => {
   item.addEventListener("click", () => {
@@ -53,6 +54,7 @@ links.forEach((item) => {
 
     el.scrollIntoView({ behavior: "smooth", block: "center" });
     item.classList.add("visited");
+    navLinkBlock.classList.toggle("show-menu");
   });
 });
 
@@ -141,7 +143,7 @@ function changeContent(currentItem) {
 }
 
 // Hamburger Menu
-const navLinkBlock = document.querySelector("#nav-links");
+
 const toggleBtn = document.querySelector(".hamburger");
 
 toggleBtn.addEventListener("click", () => {
